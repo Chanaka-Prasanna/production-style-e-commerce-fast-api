@@ -1,0 +1,11 @@
+inatall - alembic init app/db/migrations
+
+Generate first revision:producct
+alembic revision --autogenerate -m "create products table"
+using docker - docker-compose exec web alembic revision --autogenerate -m "create products table"
+
+
+Apply migrations:
+alembic upgrade head
+using docker -docker-compose exec web alembic upgrade head
+
