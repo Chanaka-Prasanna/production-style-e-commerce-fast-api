@@ -10,6 +10,9 @@ This file consolidates all the key commands used during Milestone 3 and related 
 # Stop and remove containers and network
 docker-compose down
 
+#List available volumes
+docker volume ls
+
 # Remove the MySQL volume for a fresh DB initialization
 docker volume rm fastapi-bazaar_db_data
 
